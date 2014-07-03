@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectComparisonTest", "Obj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectComparisonTest.Tests", "ObjectComparisonTest.Tests\ObjectComparisonTest.Tests.csproj", "{85854B1C-9E47-47E0-BE97-C384D1A515F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectComparisonTest.Service", "ObjectComparisonTest.Service\ObjectComparisonTest.Service.csproj", "{EF3CA191-36C6-43E4-ACB9-380A027745E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{85854B1C-9E47-47E0-BE97-C384D1A515F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85854B1C-9E47-47E0-BE97-C384D1A515F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85854B1C-9E47-47E0-BE97-C384D1A515F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF3CA191-36C6-43E4-ACB9-380A027745E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF3CA191-36C6-43E4-ACB9-380A027745E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF3CA191-36C6-43E4-ACB9-380A027745E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF3CA191-36C6-43E4-ACB9-380A027745E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
