@@ -10,6 +10,8 @@ namespace ObjectComparisonTest.App_Start
 
     using Ninject;
     using Ninject.Web.Common;
+    using ObjectComparisonTest.Service.Interface;
+    using ObjectComparisonTest.Service;
 
     public static class NinjectWebCommon 
     {
@@ -61,6 +63,7 @@ namespace ObjectComparisonTest.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Bind<IComparisonService>().To<ComparisonService>();
         }        
     }
 }

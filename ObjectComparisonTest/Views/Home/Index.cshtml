@@ -1,0 +1,75 @@
+﻿@model ObjectComparisonTest.Models.HomeModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Object Comparison Test</h2>
+
+<table width="700">
+    <tr>
+        <td colspan="3"><b>The following results are where the objects are the same.</b></td>
+    </tr>
+    <tr>
+        <td>
+            <b>Object A</b><br />
+            Forename: @Html.Raw(Model.ComparisonA.Forename) <br />
+            DateOfBirth: @Html.Raw(Model.ComparisonA.DateOfBirth.ToShortDateString()) <br />
+            SpecialNumber: @Html.Raw(Model.ComparisonA.SpecialNumber) <br />
+        </td>
+        <td>&nbsp;</td>
+        <td>
+            <b>Object B</b><br />
+            Forename: @Html.Raw(Model.ComparisonB.Forename) <br />
+            DateOfBirth: @Html.Raw(Model.ComparisonB.DateOfBirth.ToShortDateString()) <br />
+            SpecialNumber: @Html.Raw(Model.ComparisonB.SpecialNumber) <br />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3"><br /></td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            Number of differences : @Html.Raw(Model.ComparisonResponseForAB.Differences.Count())
+            @foreach (var item in Model.ComparisonResponseForAB.Differences)
+            {
+                @item.ToString()
+                <br />
+            }
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3"><br /><br /></td>
+    </tr>
+    <tr>
+        <td colspan="3"><b>The following results are where the objects contain 2 differences.</b></td>
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <td>
+            <b>Object C</b><br />
+            Forename: @Html.Raw(Model.ComparisonC.Forename) <br />
+            DateOfBirth: @Html.Raw(Model.ComparisonC.DateOfBirth.ToShortDateString()) <br />
+            SpecialNumber: @Html.Raw(Model.ComparisonC.SpecialNumber) <br />
+        </td>
+        <td>&nbsp;</td>
+        <td>
+            <b>Object D</b><br />
+            Forename: @Html.Raw(Model.ComparisonD.Forename) <br />
+            DateOfBirth: @Html.Raw(Model.ComparisonD.DateOfBirth.ToShortDateString()) <br />
+            SpecialNumber: @Html.Raw(Model.ComparisonD.SpecialNumber) <br />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3"><br /></td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            Number of differences : @Html.Raw(Model.ComparisonResponseForCD.Differences.Count())<br />
+            @foreach (var item in Model.ComparisonResponseForCD.Differences)
+            {
+                @item.ToString()
+                <br />
+            }
+        </td>
+    </tr>
+</table>
